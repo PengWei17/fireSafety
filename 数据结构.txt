@@ -1,0 +1,37 @@
+移动应用管理服务：{
+    platform: 1, // 1: ios, 2: android
+    appid："1", // app固定id号
+    appname: "政府APP",
+    version: "1.1.1", // 版本号
+    isUpdate: 1, //1为可更新，2为强制更新，0为无变化
+    desc:"啊啊啊", //更新描述内容
+    updateTime: '2013-1-1',  //更新时间
+    downloadURL: 'http://www.baidu.com'
+}
+
+版本号需要指定（在文档中）
+
+查询：
+	传入参数：
+			platform   // 平台
+			appid    //app
+			version	  //原版本号
+	反馈：
+		有新版本：
+				isUpdate  //是否强制更新
+				desc  //更新内容
+				updateTime  //更新时间
+				downloadURL  //更新下载地址
+		无新版本：
+				isUpdate  // 返回0，版本无变化
+
+添加：
+	传入参数：
+			platform  //平台
+			appid   //
+			appname  //app名称
+			version  //app版本
+			isUpdate  //是否强制更新
+			desc  //更新内容
+			updateTime  //更新时间
+			downloadURL //更新下载地址
