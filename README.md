@@ -1,5 +1,5 @@
 #移动应用管理
-![](https://raw.githubusercontent.com/PengWei17/school/master/test.jpg)
+
 ##介绍
 >
 项目App软件更新
